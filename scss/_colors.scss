@@ -1,0 +1,102 @@
+// for colors
+$primary: rgb(22, 22, 211);
+$secondary: rgb(201, 162, 162);
+$info: rgb(233, 154, 9);
+$error: rgb(194, 40, 40);
+
+
+// padding
+$base-padding: 0.75rem;
+$padding-sm: $base-padding * 1;
+$padding-lg: $base-padding * 2;
+$padding-xl: $base-padding * 3;
+
+// margin
+$base-margin: 0.75;
+$margin-sm: $base-margin * 1;
+$margin-lg: $base-margin * 2;
+$margin-xl: $base-margin * 3;
+
+
+
+
+// for colors
+$color:("primary": $primary,
+    "secondary": $secondary,
+    "info": $info,
+    "error": $error,
+    "red": rgb(78, 25, 25),
+    "green" : rgb(28, 117, 28),
+    "purple": #9900ff,
+    "yellow": #6e6e19,
+    "white": white,
+    "black": black,
+);
+
+// for color
+@each $key,
+$value in $color {
+    .text-#{$key} {
+        color: $value
+    }
+
+    .bg-#{$key} {
+        background: $value;
+    }
+
+
+    @if($value !=black and $value !=white) {
+
+        // for light 
+        @for $i from 1 through 9 {
+            .text-#{$key}-light-#{$i} {
+                color: mix(white, $value, $i * 10);
+            }
+
+            .bg-#{$key}-light-#{$i} {
+                background-color: mix(white, $value, $i * 10);
+            }
+        }
+
+        // for dark
+        @for $i from 1 through 9 {
+            .text-#{$key}-dark-#{$i} {
+                color: mix(black, $value, $i*10);
+            }
+
+            .bg-#{$key}-dark-#{$i} {
+                background-color: mix(black, $value, $i * 10);
+            }
+        }
+
+    }
+}
+
+// for margin
+@for $i from 1 through 4 {
+    .m-#{$i} {
+        margin: #{$i * 4}px;
+    }
+}
+
+// for padding
+$p: 1;
+
+@while $p <=8 {
+    .p-#{$p} {
+        padding: #{$p * 5}px;
+    }
+
+    $p: $p * 2;
+}
+
+$breakpoints: (small: 600px,
+    medium: 900px,
+    large: 1200px);
+
+@each $name,
+$size in $breakpoints {
+    .container-#{$name} {
+        width: $size;
+    }
+}
