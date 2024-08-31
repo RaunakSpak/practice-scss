@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Web Page</title>
+    <!-- Link to your CSS file (compiled from SCSS) -->
     <link rel="stylesheet" href="./scss/style.css">
 </head>
-
 <body>
-    <h2>Color</h2>
-    <span class="text-primary m-1 p-1">Primary Color</span> |
-    <span class="text-secondary">Secondary Color</span> |
-    <span class="text-info">Info Color</span> |
-    <span class="text-error">Error Color</span> |
-    <span class="text-red">Red Color</span> |
-    <span class="text-green">Green Color</span> |
-    <span class="text-purple">Purple Color</span> |
-    <span class="text-yellow">Yellow Color</span> |
-    <span class="text-white">White Color</span> | 
-    <span class="text-black">Black Color</span> |
+    <header>
+        <h1 class="text-primary">Welcome to My Web Page</h1>
+    </header>
 
-    <br><br>
+    <main>
+        <section>
+            <h2 class="text-secondary">Buttons</h2>
+            <button class="btn-primary">Primary Button</button>
+            <button class="btn-secondary">Secondary Button</button>
+            <button class="btn-outlined-info">Outlined Info Button</button>
+            <button class="btn-outlined-error">Outlined Error Button</button>
+        </section>
 
-    <span class="bg-primary">Primary Color</span> |
-    <span class="bg-secondary">Secondary Color</span> |
-    <span class="bg-info">Info Color</span> |
-    <span class="bg-error">Error Color</span> |
-    <span class="bg-red">Red Color</span> |
-    <span class="bg-green">Green Color</span> |
-    <span class="bg-purple">Purple Color</span> |
-    <span class="bg-yellow">Yellow Color</span> |
-    <span class="bg-white">White Color</span> | 
-    <span class="bg-black">Black Color</span> |
+        <section>
+            <h2 class="text-info">Background Colors</h2>
+            <div class="bg-primary p-2 m-2">Primary Background</div>
+            <div class="bg-secondary p-2 m-2">Secondary Background</div>
+            <div class="bg-info p-2 m-2">Info Background</div>
+            <div class="bg-error p-2 m-2">Error Background</div>
+        </section>
 
-<!--  This is normal html page for understanding the scss and using this features in html and show a new code like javascript and some part of logic will be come in the scss so be carefull during learning    -->
+        <section>
+            <h2 class="text-error">Light and Dark Variants</h2>
+            <div class="bg-primary-light-5 p-2 m-2">Primary Light 5</div>
+            <div class="bg-primary-dark-5 p-2 m-2">Primary Dark 5</div>
+            <div class="bg-info-light-7 p-2 m-2">Info Light 7</div>
+            <div class="bg-info-dark-7 p-2 m-2">Info Dark 7</div>
+        </section>
 
+        <section>
+            <h2 class="text-red">Responsive Containers</h2>
+            <div class="container-small bg-green p-2">Small Container (600px)</div>
+            <div class="container-medium bg-yellow p-2">Medium Container (900px)</div>
+            <div class="container-large bg-purple p-2">Large Container (1200px)</div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-black">© 2024 My Web Page. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
