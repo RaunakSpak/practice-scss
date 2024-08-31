@@ -1,102 +1,124 @@
-// for colors
+// Colors
 $primary: rgb(22, 22, 211);
 $secondary: rgb(201, 162, 162);
 $info: rgb(233, 154, 9);
 $error: rgb(194, 40, 40);
 
-
-// padding
-$base-padding: 0.75rem;
-$padding-sm: $base-padding * 1;
-$padding-lg: $base-padding * 2;
-$padding-xl: $base-padding * 3;
-
-// margin
-$base-margin: 0.75;
-$margin-sm: $base-margin * 1;
-$margin-lg: $base-margin * 2;
-$margin-xl: $base-margin * 3;
-
-
-
-
-// for colors
-$color:("primary": $primary,
+// Color Map
+$colors: (
+    "primary": $primary,
     "secondary": $secondary,
     "info": $info,
     "error": $error,
     "red": rgb(78, 25, 25),
-    "green" : rgb(28, 117, 28),
+    "green": rgb(28, 117, 28),
     "purple": #9900ff,
     "yellow": #6e6e19,
     "white": white,
-    "black": black,
+    "black": black
 );
 
-// for color
-@each $key,
-$value in $color {
-    .text-#{$key} {
-        color: $value
+// Spacing
+$base-padding: 0.75rem;
+$padding-sm: $base-padding;
+$padding-lg: $base-padding * 2;
+$padding-xl: $base-padding * 3;
+
+$base-margin: 0.75rem;
+$margin-sm: $base-margin;
+$margin-lg: $base-margin * 2;
+$margin-xl: $base-margin * 3;
+
+$base-border-radius: 20px;
+
+// Button Mixin
+@mixin btn($color) {
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    display: inline-block;
+    background-color: $color;
+    color: white; // Default text color for buttons
+    padding: $padding-sm $padding-lg;
+    border-radius: $base-border-radius;
+}
+
+// Generate color classes
+@each $name, $color in $colors {
+    .text-#{$name} {
+        color: $color;
     }
 
-    .bg-#{$key} {
-        background: $value;
+    .bg-#{$name} {
+        background-color: $color;
     }
 
-
-    @if($value !=black and $value !=white) {
-
-        // for light 
+    @if $color != black and $color != white {
+        // Generate light variants
         @for $i from 1 through 9 {
-            .text-#{$key}-light-#{$i} {
-                color: mix(white, $value, $i * 10);
+            .text-#{$name}-light-#{$i} {
+                color: mix(white, $color, $i * 10%);
             }
 
-            .bg-#{$key}-light-#{$i} {
-                background-color: mix(white, $value, $i * 10);
+            .bg-#{$name}-light-#{$i} {
+                background-color: mix(white, $color, $i * 10%);
             }
         }
 
-        // for dark
+        // Generate dark variants
         @for $i from 1 through 9 {
-            .text-#{$key}-dark-#{$i} {
-                color: mix(black, $value, $i*10);
+            .text-#{$name}-dark-#{$i} {
+                color: mix(black, $color, $i * 10%);
             }
 
-            .bg-#{$key}-dark-#{$i} {
-                background-color: mix(black, $value, $i * 10);
+            .bg-#{$name}-dark-#{$i} {
+                background-color: mix(black, $color, $i * 10%);
             }
         }
+    }
 
+    // Button classes
+    .btn-#{$name} {
+        @include btn($color);
+    }
+
+    .btn-outlined-#{$name} {
+        @include btn(white);
+        background-color: white;
+        color: $color;
+        border: 2px solid $color;
     }
 }
 
-// for margin
+// Generate margin classes
 @for $i from 1 through 4 {
     .m-#{$i} {
-        margin: #{$i * 4}px;
+        margin: #{$i * $margin-sm};
     }
 }
 
-// for padding
+// Generate padding classes
 $p: 1;
 
-@while $p <=8 {
+@while $p <= 8 {
     .p-#{$p} {
-        padding: #{$p * 5}px;
+        padding: #{$p * $padding-sm};
     }
 
     $p: $p * 2;
 }
 
-$breakpoints: (small: 600px,
+// Responsive breakpoints
+$breakpoints: (
+    small: 600px,
     medium: 900px,
-    large: 1200px);
+    large: 1200px
+);
 
-@each $name,
-$size in $breakpoints {
-    .container-#{$name} {
-        width: $size;
+@each $name, $size in $breakpoints {
+    @media (min-width: #{$size}) {
+        .container-#{$name} {
+            width: $size;
+        }
     }
 }

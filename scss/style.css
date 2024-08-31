@@ -3,7 +3,7 @@
 }
 
 .bg-primary {
-  background: rgb(22, 22, 211);
+  background-color: rgb(22, 22, 211);
 }
 
 .text-primary-light-1 {
@@ -150,12 +150,37 @@
   background-color: #020215;
 }
 
+.btn-primary {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: rgb(22, 22, 211);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+}
+
+.btn-outlined-primary {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(22, 22, 211);
+  border: 2px solid rgb(22, 22, 211);
+}
+
 .text-secondary {
   color: rgb(201, 162, 162);
 }
 
 .bg-secondary {
-  background: rgb(201, 162, 162);
+  background-color: rgb(201, 162, 162);
 }
 
 .text-secondary-light-1 {
@@ -302,12 +327,37 @@
   background-color: #141010;
 }
 
+.btn-secondary {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: rgb(201, 162, 162);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+}
+
+.btn-outlined-secondary {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(201, 162, 162);
+  border: 2px solid rgb(201, 162, 162);
+}
+
 .text-info {
   color: rgb(233, 154, 9);
 }
 
 .bg-info {
-  background: rgb(233, 154, 9);
+  background-color: rgb(233, 154, 9);
 }
 
 .text-info-light-1 {
@@ -454,12 +504,37 @@
   background-color: #170f01;
 }
 
+.btn-info {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: rgb(233, 154, 9);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+}
+
+.btn-outlined-info {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(233, 154, 9);
+  border: 2px solid rgb(233, 154, 9);
+}
+
 .text-error {
   color: rgb(194, 40, 40);
 }
 
 .bg-error {
-  background: rgb(194, 40, 40);
+  background-color: rgb(194, 40, 40);
 }
 
 .text-error-light-1 {
@@ -606,12 +681,37 @@
   background-color: #130404;
 }
 
+.btn-error {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: rgb(194, 40, 40);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+}
+
+.btn-outlined-error {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(194, 40, 40);
+  border: 2px solid rgb(194, 40, 40);
+}
+
 .text-red {
   color: rgb(78, 25, 25);
 }
 
 .bg-red {
-  background: rgb(78, 25, 25);
+  background-color: rgb(78, 25, 25);
 }
 
 .text-red-light-1 {
@@ -758,12 +858,37 @@
   background-color: #080303;
 }
 
+.btn-red {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: rgb(78, 25, 25);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+}
+
+.btn-outlined-red {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(78, 25, 25);
+  border: 2px solid rgb(78, 25, 25);
+}
+
 .text-green {
   color: rgb(28, 117, 28);
 }
 
 .bg-green {
-  background: rgb(28, 117, 28);
+  background-color: rgb(28, 117, 28);
 }
 
 .text-green-light-1 {
@@ -910,12 +1035,37 @@
   background-color: #030c03;
 }
 
+.btn-green {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: rgb(28, 117, 28);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+}
+
+.btn-outlined-green {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(28, 117, 28);
+  border: 2px solid rgb(28, 117, 28);
+}
+
 .text-purple {
   color: #9900ff;
 }
 
 .bg-purple {
-  background: #9900ff;
+  background-color: #9900ff;
 }
 
 .text-purple-light-1 {
@@ -1062,12 +1212,37 @@
   background-color: #0f001a;
 }
 
+.btn-purple {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: #9900ff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+}
+
+.btn-outlined-purple {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  background-color: white;
+  color: #9900ff;
+  border: 2px solid #9900ff;
+}
+
 .text-yellow {
   color: #6e6e19;
 }
 
 .bg-yellow {
-  background: #6e6e19;
+  background-color: #6e6e19;
 }
 
 .text-yellow-light-1 {
@@ -1214,12 +1389,62 @@
   background-color: #0b0b03;
 }
 
+.btn-yellow {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: #6e6e19;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+}
+
+.btn-outlined-yellow {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  background-color: white;
+  color: #6e6e19;
+  border: 2px solid #6e6e19;
+}
+
 .text-white {
   color: white;
 }
 
 .bg-white {
-  background: white;
+  background-color: white;
+}
+
+.btn-white {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+}
+
+.btn-outlined-white {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  background-color: white;
+  color: white;
+  border: 2px solid white;
 }
 
 .text-black {
@@ -1227,49 +1452,78 @@
 }
 
 .bg-black {
-  background: black;
+  background-color: black;
+}
+
+.btn-black {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+}
+
+.btn-outlined-black {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
 }
 
 .m-1 {
-  margin: 4px;
+  margin: 0.75rem;
 }
 
 .m-2 {
-  margin: 8px;
+  margin: 1.5rem;
 }
 
 .m-3 {
-  margin: 12px;
+  margin: 2.25rem;
 }
 
 .m-4 {
-  margin: 16px;
+  margin: 3rem;
 }
 
 .p-1 {
-  padding: 5px;
+  padding: 0.75rem;
 }
 
 .p-2 {
-  padding: 10px;
+  padding: 1.5rem;
 }
 
 .p-4 {
-  padding: 20px;
+  padding: 3rem;
 }
 
 .p-8 {
-  padding: 40px;
+  padding: 6rem;
 }
 
-.container-small {
-  width: 600px;
+@media (min-width: 600px) {
+  .container-small {
+    width: 600px;
+  }
 }
-
-.container-medium {
-  width: 900px;
+@media (min-width: 900px) {
+  .container-medium {
+    width: 900px;
+  }
 }
-
-.container-large {
-  width: 1200px;
+@media (min-width: 1200px) {
+  .container-large {
+    width: 1200px;
+  }
 }/*# sourceMappingURL=style.css.map */
